@@ -21,9 +21,11 @@ To create database and connect it to your code. You should follow the steps bell
 10. Now you can get endpoint and DB name and username.
 <img width="1627" alt="screen shot 2018-10-18 at 11 15 58 am" src="https://user-images.githubusercontent.com/31826320/47165350-c0d04680-d2c7-11e8-9271-152bcedb688d.png">
 11.Go to application.py and change the following based on your database. 
+     
+     ```
         app.config['MYSQL_DATABASE_HOST'] = 'endpoint of the database from RDS'
         app.config['MYSQL_DATABASE_USER'] = 'username of the database from RDS'
         app.config['MYSQL_DATABASE_PASSWORD'] = 'Password of the database from RDS'
         app.config['MYSQL_DATABASE_DB'] = 'name of the of the database from RDS'
-
+      ```
 
