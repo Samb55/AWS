@@ -2,7 +2,7 @@ RDS is one of Amazon services that can be used to create database.
 # RDS
 To create database and connect it to your code. You should follow the steps bellow:
 1. Open your AWS management cosole.
-2. In all service you will find database services. Click on RDS.
+2. In All Service you will find database services. Click on RDS.
 3. Click on create database
 <img width="1059" alt="screen shot 2018-10-18 at 11 03 32 am" src="https://user-images.githubusercontent.com/31826320/47165342-c037b000-d2c7-11e8-9a4e-676b6b21a526.png">
 <img width="1208" alt="screen shot 2018-10-18 at 11 05 33 am" src="https://user-images.githubusercontent.com/31826320/47165343-c037b000-d2c7-11e8-94b4-ad0eed934c09.png">
