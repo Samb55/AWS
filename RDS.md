@@ -36,6 +36,7 @@ To create database and connect it to your code. You should follow the steps bell
 13. Click eneter Then termianl will ask you to enter password. Enter your DB password.
 14. Enter your mysql code (e.g. create tabel)
 <img width="1067" alt="screen shot 2018-10-18 at 11 38 04 am" src="https://user-images.githubusercontent.com/31826320/47166628-a2b81580-d2ca-11e8-8c5d-f34417b33b75.png">
+     
      ```
           show databases;
           use yourdatabase name;
@@ -43,5 +44,6 @@ To create database and connect it to your code. You should follow the steps bell
           id INTEGER PRIMARY KEY AUTO_INCREMENT, 
           name varchar(20) UNIQUE NOT NULL,email varchar(30), 
           password TEXT NOT NULL);
+          
       ```
 
