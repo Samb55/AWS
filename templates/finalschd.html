@@ -1,0 +1,205 @@
+
+
+{% extends 'layout.html' %}
+
+
+
+
+{% block title %} Final exams schdule {% endblock %}
+
+
+
+
+
+{% block content %}
+
+<style type="text/css">
+	table {
+	border-style: groove;
+    border-collapse: collapse;
+    width: 50%;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+    background-color: #822020;
+    color: white;
+}
+	p{
+		font-size: 70px;
+		margin: auto;
+	    text-align: center;
+	    padding-top: 20%;
+	    color: white;
+	}
+</style>
+<head>
+	 <link rel="stylesheet" type="text/css" media="screen" href="/static/style.css" />
+
+</head>
+
+<!-- Header with image -->
+<div class="bgimg w3-display-container w3-grayscale-min" id="home">
+
+
+     
+
+		<p>
+		{% if session['name'] %}
+
+
+		Welcome {{ session['name'] }}
+
+
+		{% else %}
+
+
+		Computer Information science
+
+
+		{% endif %}
+		</p>
+	
+
+</div>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large"></div>
+
+<div>
+<h2><center>Final Exams Schedule</center></h2>
+
+<table align="center">
+  <tr>
+    <th>Monday</th>
+    <th>Class</th>
+    <th>Class time</th>
+    <th>Time</th>
+  </tr>
+  <tr>
+    <td>8:30-10:30</td>
+    <td>For MWF</td>
+    <td>Classes that meet at</td>
+    <td>8:00am</td>
+  </tr>
+  <tr>
+    <td>8:30-10:30</td>
+    <td>For MWF</td>
+    <td>Classes that meet at</td>
+    <td>10:10am</td>
+  </tr>
+  <tr>
+    <td>8:30-10:30</td>
+    <td>For MWF</td>
+    <td>Classes that meet at</td>
+    <td>12:20am</td>
+  </tr>
+  <tr>
+    <td>8:30-10:30</td>
+    <td>For MW</td>
+    <td>Classes that meet at</td>
+    <td>1:25am</td>
+</tr>
+<tr>
+    <th>Tueeday</th>
+    <th>Class</th>
+    <th>Class time</th>
+    <th>Time</th>
+
+  </tr>
+  <tr>
+    <td>8:30-10:30</td>
+    <td>For TTH</td>
+    <td>Classes that meet at</td>
+    <td>8:00am</td>
+  </tr>
+  <tr>
+    <td>8:30-10:30</td>
+    <td>For TTH</td>
+    <td>Classes that meet at</td>
+     <td>10:10am</td>
+  </tr>
+  <tr>
+    <td>8:30-10:30</td>
+    <td>For TTH</td>
+    <td>Classes that meet at</td>
+      <td>12:20</td>
+  </tr>
+  <tr>
+    <td>8:30-10:30</td>
+    <td>For T</td>
+    <td>Classes that meet at</td>
+    <td>1:25am</td>
+</tr>
+<tr>
+    <th>Wednesday</th>
+    <th>Class</th>
+    <th>Class time</th>
+    <th>Time</th>
+  </tr>
+  <tr>
+    <td>8:30-10:30</td>
+    <td>For MWF</td>
+    <td>Classes that meet at</td>
+    <td>8:00am</td>
+  </tr>
+  <tr>
+    <td>8:30-10:30</td>
+    <td>For MWF</td>
+    <td>Classes that meet at</td>
+     <td>10:10am</td>
+  </tr>
+  <tr>
+    <td>8:30-10:30</td>
+    <td>For MWF</td>
+    <td>Classes that meet at</td>
+    <td>12:20</td>
+  </tr>
+  <tr>
+    <td>8:30-10:30</td>
+    <td>For W</td>
+    <td>Classes that meet at</td>
+    <td>1:25am</td>
+</tr>
+
+<tr>
+    <th>Thursday</th>
+    <th>Class</th>
+    <th>Class time</th>
+    <th>Time</th>
+  </tr>
+  <tr>
+    <td>8:30-10:30</td>
+    <td>For TTH</td>
+    <td>Classes that meet at</td>
+    <td>8:00am</td>
+  </tr>
+  <tr>
+    <td>8:30-10:30</td>
+    <td>For TTH</td>
+    <td>Classes that meet at</td>
+     <td>10:10am</td>
+  </tr>
+  <tr>
+    <td>8:30-10:30</td>
+    <td>For TH</td>
+    <td>Classes that meet at</td>
+    <td>12:20</td>
+  </tr>
+  <tr>
+    <td>8:30-10:30</td>
+    <td>For TTH</td>
+<td>Classes that meet at</td>
+<td>1:25am</td>
+</tr>
+
+</table>
+</div>
+
+{% endblock %}

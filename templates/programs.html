@@ -1,0 +1,144 @@
+
+
+{% extends 'layout.html' %}
+
+
+
+
+{% block title %} Programs {% endblock %}
+
+
+
+
+
+{% block content %}
+<style type="text/css">
+	
+.welcome{
+		font-size: 70px;
+		margin: auto;
+	    text-align: center;
+	    padding-top: 20%;
+	    color: white;
+  }
+ #resume {
+   background: #fff;
+   padding-top: 90px;
+   padding-bottom: 72px;
+   overflow: hidden;
+}
+
+
+
+#resume h1 {
+   font: 18px/24px 'opensans-bold', sans-serif;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+}
+#resume h1 span {
+   border-bottom: 3px solid #11ABB0;
+   padding-bottom: 6px;
+}
+
+
+</style>
+<head>
+	 <link rel="stylesheet" type="text/css" media="screen" href="/static/style.css" />
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+</head>
+
+<!-- Header with image -->
+<div class="bgimg w3-display-container w3-grayscale-min" id="home">
+
+
+     
+
+		<p class="welcome">
+		{% if session['name'] %}
+
+
+		Welcome {{ session['name'] }}
+
+
+		{% else %}
+
+
+		Computer Information science
+
+
+		{% endif %}
+		</p>
+	
+
+</div>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large"></div>
+
+<div>
+<section id="resume">
+<div class="w3-content w3-center w3-padding-64" style="max-width:1100px" id="band">
+   <div className="row education">
+      <div className="three columns header-col">
+         <h1><span>COURSE OF STUDY FOR DATA SCIENCE </span></h1>
+      </div>
+      <div className="nine columns main-col">
+         <div className="row item">
+            <div className="twelve columns">
+               <h3>(DS)</h3>
+               <p class="w3-justify"> Data Science is a dynamic and fast growing field at the interface of Statistics and Computer Science. The emergence of massive datasets containing millions or even billions of observations provides the primary impetus for the field. Such datasets arise, for instance, in large-scale retailing, telecommunications, astronomy, medical domain, volumes of documents and social media. The MS-CIS with Data Science option prepares students to understand major practice areas in data science. They can collect, organize and manage data, identify patterns in data using visualization, statistical analysis and data mining, develop actionable insight based on big data, communicate data analysis and findings to people across a broad range of industries. They meet the demand of careers including Data Engineer, Data Architect, Statistical Programmer, and Big Data Analysts..</p>
+                  <p class="w3-justify">In addition to the overall program outcomes, at the conclusion of the program of study, the DS-option graduate will be able to:</p>
+                  <p class="w3-justify"> 1. Identify patterns in data using data mining techniques.</p>
+                  <p class="w3-justify"> 2. Manage large-scale data and the practical issues surrounding how the data is stored, processed, and analyzed in the cloud.</p>
+                  <p class="w3-justify"> 3. Extract knowledge from large amounts of text data.</p>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+
+<section id="resume">
+<div class="w3-content w3-center w3-padding-64" style="max-width:1100px" id="band">
+   <div className="row education">
+      <div className="three columns header-col">
+         <h1><span>COURSE OF STUDY FOR INFORMATION TECHNOLOGY </span></h1>
+      </div>
+      <div className="nine columns main-col">
+         <div className="row item">
+            <div className="twelve columns">
+               <h3>(IT)</h3>
+               <p class="w3-justify"> The MS-CIS with Information Technology Option is designed for students who wish to combine technical competence in information technology with knowledge of managerial and organizational issues. Students will have extensive skill and experience in the design and implementation of operational databases as well as the data warehousing, cloud computing technologies and related business intelligence technologies for managing the enterprise. They will be trained on the business intelligence techniques to discover knowledge from massive data sets along with the importance on data security. This option will prepare the student with the management and advanced technology skills needed to become a leader and decision-maker in the technology field. Career tracks include Database and Cloud Network Administrators and Designers, Data Security and Business Intelligence Analysts.</p>
+                  <p class="w3-justify">In addition to the overall program outcomes, at the conclusion of the program of study, the IT-option graduate will be able to:</p>
+                  <p class="w3-justify"> 1. Understand database modeling, design and implementation. </p>
+                  <p class="w3-justify"> 2. Demonstrate knowledge of Cloud Computing Technologies. </p>
+                  <p class="w3-justify"> 3. Derive intelligence from large volumes of business data. </p>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+
+<section id="resume">
+<div class="w3-content w3-center w3-padding-64" style="max-width:1100px" id="band">
+   <div className="row education">
+      <div className="three columns header-col">
+         <h1><span>COURSE OF STUDY FOR SOFTWARE ENGINEERING </span></h1>
+      </div>
+      <div className="nine columns main-col">
+         <div className="row item">
+            <div className="twelve columns">
+               <h3>(SE)</h3>
+               <p class="w3-justify"> The Software Engineering (SE) option focuses on mobile computing and interactive software development. Software testing and quality assurance methods are weaved throughout the curriculum. Students develop interactive apps for iOS (iPad, iPhone) and Android.</p>
+               <p class="w3-justify">In addition to the overall program outcomes, at the conclusion of the program of study, the DS-option graduate will be able to:</p>
+               <p class="w3-justify"> 1. Identify patterns in data using data mining techniques.</p>
+               <p class="w3-justify"> 2. Manage large-scale data and the practical issues surrounding how the data is stored, processed, and analyzed in the cloud.</p>
+               <p class="w3-justify"> 3. Extract knowledge from large amounts of text data.</p>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+
+{% endblock %}

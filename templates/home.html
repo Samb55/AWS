@@ -1,0 +1,71 @@
+
+{% extends 'layout.html' %}
+
+
+
+
+{% block title %} Home {% endblock %}
+
+
+
+
+
+{% block content %}
+<head>
+	 <link rel="stylesheet" type="text/css" media="screen" href="/static/style.css" />
+
+</head>
+<style type="text/css">
+	
+	p{
+		font-size: 70px;
+		margin: auto;
+	    text-align: center;
+	    padding-top: 20%;
+	    color: white;
+	}
+</style>
+
+
+<!-- Header with image -->
+<div class="bgimg w3-display-container w3-grayscale-min" id="home">
+
+
+     
+
+		<p>
+		{% if session['name'] %}
+
+
+		Welcome {{ session['name'] }}
+
+
+		{% else %}
+
+
+		Computer Information science
+
+
+		{% endif %}
+		</p>
+	
+
+</div>
+
+<!-- Add a background color and large text to the whole page -->
+
+
+<div class="container">
+
+
+ <div class="row">
+
+
+
+ </div>
+
+
+</div>
+
+
+{% endblock %}
