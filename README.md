@@ -1,6 +1,6 @@
 In AWS their are multiple ways to deploy your web app. I will try to briefly explain some of them.
 # Build web app 
-Build web app is the easiest way to deploy your web app in AWS. Because, The AWS will create the whole environment for you. You just need to upload your code. To get the idea you can just download sample_flask.zip from my repository (note: You have to read RDS.md file before you used this code). The file (sample_flask.zip) has a whole code file with (requirements.txt) file. The file (requirements.txt) contains all libraries needs for your code to run (e.g. flask, flask-mysql, etc...). The steps to deploy your app are described bellow:
+Build web app is the easiest way to deploy your web app in AWS. Because, The AWS will create the whole environment for you. You just need to upload your code. To get the idea you can just download sample_flask.zip from my repository (note: You have to read [a link](https://github.com/Samb55/AWS/blob/master/RDS.md)RDS.md file before you used this code). The file (sample_flask.zip) has a whole code file with (requirements.txt) file. The file (requirements.txt) contains all libraries needs for your code to run (e.g. flask, flask-mysql, etc...). The steps to deploy your app are described bellow:
 1. open your management concole.
 2. Scroll down to Build a Solution.
 3. Click on Build a web app.
