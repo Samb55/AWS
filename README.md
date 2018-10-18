@@ -1,1 +1,1 @@
-# AWS
+# Amazon Web Servier (AWS) Is many severs provided by amazon that give costmers or organizations multiple options that can be used. I will try to explain some of these questions and I will provide some example. 
