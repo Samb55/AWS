@@ -20,12 +20,28 @@ To create database and connect it to your code. You should follow the steps bell
 <img width="1623" alt="screen shot 2018-10-18 at 11 15 38 am" src="https://user-images.githubusercontent.com/31826320/47165349-c0d04680-d2c7-11e8-8ed9-0d7cadcfa652.png">
 10. Now you can get endpoint and DB name and username.
 <img width="1627" alt="screen shot 2018-10-18 at 11 15 58 am" src="https://user-images.githubusercontent.com/31826320/47165350-c0d04680-d2c7-11e8-9271-152bcedb688d.png">
-11.Go to application.py and change the following based on your database. 
+11. Go to application.py and change the following based on your database. 
      
      ```
         app.config['MYSQL_DATABASE_HOST'] = 'endpoint of the database from RDS'
         app.config['MYSQL_DATABASE_USER'] = 'username of the database from RDS'
         app.config['MYSQL_DATABASE_PASSWORD'] = 'Password of the database from RDS'
         app.config['MYSQL_DATABASE_DB'] = 'name of the of the database from RDS'
+      ```
+12. Go to terminal and enter the followings:
+      ```
+        export PATH=$PATH:/usr/local/mysql/bin
+        mysql -h <endpoint> -P 3306 -u <username> -p
+      ```
+13. Click eneter Then termianl will ask you to enter password. Enter your DB password.
+14. Enter your mysql code (e.g. create tabel)
+<img width="1067" alt="screen shot 2018-10-18 at 11 38 04 am" src="https://user-images.githubusercontent.com/31826320/47166628-a2b81580-d2ca-11e8-8c5d-f34417b33b75.png">
+     ```
+          show databases;
+          use yourdatabase name;
+          CREATE TABLE users( 
+          id INTEGER PRIMARY KEY AUTO_INCREMENT, 
+          name varchar(20) UNIQUE NOT NULL,email varchar(30), 
+          password TEXT NOT NULL);
       ```
 
