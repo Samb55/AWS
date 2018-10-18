@@ -5,14 +5,11 @@ import bcrypt
 application=app = Flask(__name__ , static_url_path='/static')
 app.secret_key = '^A%DJAJU^JJ123'
 #app.config['SESSION_TYPE'] = 'filesystem'
-app.config['MYSQL_DATABASE_HOST'] = 'introcloud.cr1uwcxbg0if.us-east-2.rds.amazonaws.com'
-app.config['MYSQL_DATABASE_USER'] = 'cloudintro'
-app.config['MYSQL_DATABASE_PASSWORD'] = 'rootroot'
-app.config['MYSQL_DATABASE_DB'] = 'db'
-#app.config['MYSQL_DATABASE_PORT'] = '3306'
+app.config['MYSQL_DATABASE_HOST'] = 'endpoint of the database from RDS'
+app.config['MYSQL_DATABASE_USER'] = 'username of the database from RDS'
+app.config['MYSQL_DATABASE_PASSWORD'] = 'Password of the database from RDS'
+app.config['MYSQL_DATABASE_DB'] = 'name of the of the database from RDS'
 
-# app.config['MYSQL_DATABASE_PORT'] = '5005'
-# app.config['MYSQL_DATABASE_CHARSET'] = 'utf8'
 mysql = MySQL(app)
 
 
