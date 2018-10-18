@@ -15,7 +15,7 @@ Build web app is the easiest way to deploy your web app in AWS. Because, The AWS
 <img width="1678" alt="screen shot 2018-10-17 at 9 20 08 pm" src="https://user-images.githubusercontent.com/31826320/47125611-7791df80-d252-11e8-86f5-8703a4c67d12.png">
 8. Click on upload and deploy to deploy your app.
 <img width="1667" alt="screen shot 2018-10-17 at 9 18 50 pm" src="https://user-images.githubusercontent.com/31826320/47125566-4b765e80-d252-11e8-8ba3-33525d469af0.png">
-9. In upload application you should click on choose file and upload zip file that contains your code (e.g. flask-app. zip)
+9. In upload application you should click on choose file and upload zip file that contains your code (e.g. sample-flask. zip)
 <img width="1467" alt="screen shot 2018-10-17 at 9 23 28 pm" src="https://user-images.githubusercontent.com/31826320/47125703-f129cd80-d252-11e8-83da-009c2a5410d3.png">
 
 
