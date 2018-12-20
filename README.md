@@ -21,5 +21,3 @@ Build web app is the easiest way to deploy your web app in AWS. Because, The AWS
 
                                             Congratulations!!! you have your own app. 
 
-# EC2
-Coming Soon!
